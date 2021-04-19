@@ -33,10 +33,11 @@ export const login = (user) => {
         dispatch({ type: userContants.USER_LOG_IN_REQUEST });
         console.log('before post');
         try {
-            const res = await axios.post('/user/login', user);
+            const res = await axios.post('/api/auth/login', user);
+            console.log(res)
             console.log('after post');
             console.log(res.data);
-            if (res.status === 200) {
+            if (res.data.code === 200) {
                 const { user, token } = res.data;
                 localStorage.setItem('token', token);
                 localStorage.setItem('user', JSON.stringify(user));

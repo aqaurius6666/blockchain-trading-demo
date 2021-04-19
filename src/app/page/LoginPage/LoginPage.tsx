@@ -52,7 +52,7 @@ export default function LoginPage() {
 
     const handleSubmit = () => {
         if (email && password && error.length === 0) {
-            dispatch(login({ email, password }));
+            dispatch(login({ username:email, password }));
             if (!user.error) {
                 setEmail('');
                 setPassword('');

@@ -109,6 +109,7 @@
     "sha256": "0.2.0",
     "socicon": "3.0.5",
     "styled-components": "^5.2.1",
+    "yarn": "^1.22.10",
     "yup": "0.29.0"
   },
   "devDependencies": {
