@@ -1,12 +1,12 @@
 import { userContants } from './contants';
 import axios from './axios';
 
-export const signup = (user) => {
+export const register = (user) => {
     return async dispatch => {
         dispatch({ type: userContants.USER_SIGN_UP_REQUEST });
         console.log('before post');
         try {
-            const res = await axios.post('/user/signup', user);
+            const res = await axios.post('/register', user);
             console.log('after post');
             console.log(res.data);
             if (res.status === 201) {
@@ -33,7 +33,7 @@ export const login = (user) => {
         dispatch({ type: userContants.USER_LOG_IN_REQUEST });
         console.log('before post');
         try {
-            const res = await axios.post('/user/login', user);
+            const res = await axios.post('/login', user);
             console.log('after post');
             console.log(res.data);
             if (res.status === 200) {

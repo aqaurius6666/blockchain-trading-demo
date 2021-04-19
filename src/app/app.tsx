@@ -5,6 +5,7 @@ import {TradingPage} from "./page/TradingPage/TradingPage";
 import LoginPage from './page/LoginPage/LoginPage';
 import {NavBar} from './component/nav-bar/navbar'
 import { isUserLoggedIn } from './actions';
+import RegisterPage from './page/RegisterPage/RegisterPage';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={TradingPage} />
           <Route path='/login' component={LoginPage} />
+          <Route path='/register' component={RegisterPage} />
         </Switch>
       </Router>
     </div>
