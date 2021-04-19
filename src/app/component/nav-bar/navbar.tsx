@@ -28,7 +28,7 @@ export const NavBar = () => {
                 <Navbar.Collapse id="navbarcollapse">
                     <Nav>
                         <Nav.Link style={{color: "white"}} href="login">Sign in</Nav.Link>
-                        <Nav.Link style={{color: "white"}} href="sign-up">Sign up</Nav.Link>
+                        <Nav.Link style={{color: "white"}} href="register">Sign up</Nav.Link>
                         <Nav.Link style={{color: "white"}} onClick={handleLogout} >Log out</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
